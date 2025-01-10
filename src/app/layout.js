@@ -1,10 +1,8 @@
-
-import { Outfit } from "@next/font/google";
+import { Outfit } from "next/font/google"; // Changed from @next/font/google
 import "./globals.css";
 
 const outfit = Outfit({
-  subsets: ["latin"], 
-  variable: "--font-outfit",
+  subsets: ["latin"],
 });
 
 export const metadata = {
@@ -14,7 +12,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={outfit.variable}>
+    <html lang="en" className={outfit.className}>
       <body>{children}</body>
     </html>
   );

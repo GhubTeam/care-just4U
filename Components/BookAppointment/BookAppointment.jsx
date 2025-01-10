@@ -31,6 +31,7 @@ const BookAppointment = () => {
             }`}
             style={{
               backgroundImage: `linear-gradient(rgba(27, 55, 107, 0.85), rgba(27, 55, 107, 0.85)), url(${slide.backgroundImage})`,
+        
             }}
           >
             <div className="slide-content">

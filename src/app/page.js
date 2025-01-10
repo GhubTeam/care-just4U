@@ -1,5 +1,4 @@
-
-import styles from "./page.module.css";
+import "./globals.css"
 import Navbar from "../../Components/NavBar/NavBar";
 import About from "../../Components/About/About";
 import BookAppointment from "../../Components/BookAppointment/BookAppointment";
@@ -11,7 +10,7 @@ import Footer from "../../Components/Footer/Footer";
 
 export default function Home() {
   return (
-    <div className= {styles.page}>
+    <div className="container">
       <Navbar />
       <Hero/>
       <About/>
