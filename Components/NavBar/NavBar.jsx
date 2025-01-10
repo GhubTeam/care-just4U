@@ -83,7 +83,7 @@ const Navbar = () => {
           >
             Testimonials
           </Link>
-          <Link
+          {/* <Link
             to="team"
             smooth={true}
             duration={500}
@@ -92,7 +92,7 @@ const Navbar = () => {
             onClick={() => setIsMenuOpen(false)}
           >
             Our Team
-          </Link>
+          </Link> */}
           <Link
             to="contact-section"
             smooth={true}
