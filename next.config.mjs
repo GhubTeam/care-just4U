@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  basePath: "/care-just4U",
+  output: "export", // Enables static site generation
+  basePath: process.env.NODE_ENV === "production" ? "/care-just4U" : "",
+  assetPrefix: process.env.NODE_ENV === "production" ? "/care-just4U/" : "",
 };
 
 export default nextConfig;
