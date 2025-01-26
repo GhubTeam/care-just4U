@@ -46,20 +46,20 @@ function About() {
         <div className="about-right">
           <div className="about-images">
             <img
-              src="/doctor-1.jpg"
-              alt="doctor-1"
-              className="doctor-1"
+              src="/old-care-1.jpg"
+              alt="elderly-care"
+              className="about-image-1"
             />
             <img
-              src="/doctor-2.jpg"
-              alt="doctor 2"
-              className="doctor-2"
+              src="/elderly-care.jpg"
+              alt="elderly-care"
+              className="about-image-2"
             />
           </div>
         </div>
       </div>
       <div className="about-us">
-        <img src="/medics.jpg" alt="medicals" />
+        <img src="/old-care-3.jpg" alt="old human care" />
         <div className="abt-why-us">
           <h1>Why Choose Us</h1>
           <ol className="numbered-list">

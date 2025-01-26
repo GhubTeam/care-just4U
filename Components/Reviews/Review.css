@@ -2,6 +2,7 @@
 .review-section {
   padding: 40px 20px;
 background-color: #f8fafc;
+margin: 0 auto;
 }
 
 .review-container {
@@ -119,8 +120,8 @@ background-color: #f8fafc;
 }
 
 .review-hero-image {
-  width: 100%;
-  height: auto;
+  width: 500px;
+  height: 420px;
   border-radius: 12px;
   object-fit: cover;
 }
@@ -204,5 +205,8 @@ background-color: #f8fafc;
 
   .review-card {
     padding: 10px;
+  }
+  .review-hero-image{
+    width: 300px;
   }
 }

@@ -78,7 +78,7 @@ const Review = () => {
         </div>
         <div className="review-image-container">
           <img
-            src="/doctor-patient.jpg"
+            src="/old-care-11.jpg"
             alt="Doctor with patients"
             className="review-hero-image"
           />

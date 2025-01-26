@@ -13,10 +13,7 @@ const Services = () => {
     <section className="services-section">
       <div className="services-container">
         <div className="services-image">
-          <img
-            src="/doctors-meeting.jpg"
-            alt="Doctors in meeting"
-          />
+          <img src="/old-care-10.jpg" alt="Doctors in meeting" />
         </div>
 
         <div className="services-content">
