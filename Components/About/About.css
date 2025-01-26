@@ -1,0 +1,289 @@
+.about-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:50px;
+    
+    
+}
+.about {
+    display: flex;
+    gap: 300px;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    
+
+}
+
+.about-left {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    width: 100%;
+    gap: 20px;
+   
+}
+
+.about-left h1 {
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: rgb(4, 4, 61);
+}
+
+.about-left button {
+    margin-top: 20px;
+    width: auto;
+    align-self: flex-start;
+}
+
+.about-left p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.about-right {
+    position: relative;
+    padding :40px
+}
+
+.about-images {
+    position: relative;
+}
+
+.doctor-1 {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+}
+
+.doctor-2 {
+    position: absolute;
+    top: 80px;
+    left: -150px;
+    width: 220px;
+    z-index: 2;
+}
+
+.about-us {
+    background-color: whitesmoke;
+    display: flex;
+    color: #fff;
+    position: relative;
+    align-items: center;
+
+}
+
+.about-us img {
+    width: 500px;
+    position: relative;
+   
+}
+
+.abt-why-us {
+    background-color: rgb(5, 64, 109);
+    position: absolute;
+    left: 400px;
+    top: 100px;
+    width: 420px;
+    height: 500px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.abt-why-us h1 {
+    margin-bottom: 30px;
+}
+
+.abt-why-us ol {
+    list-style-type: none;
+    padding-left: 30px;
+    counter-reset: item;
+}
+
+.abt-why-us ol li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.abt-why-us ol li::before {
+    content: counter(item);
+    counter-increment: item;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: grey;
+    margin-right: 15px;
+}
+
+.abt-why-us ol li .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.abt-why-us ol li span {
+    color: rgb(69, 189, 69);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.abt-why-us ol li p {
+    font-size: 13px;
+    color: white;
+    margin-top: 2px;
+}
+
+@media (max-width: 1400px) {
+    .about {
+        gap: 150px;
+        margin: 60px;
+    }
+    
+    .doctor-2 {
+        left: -100px;
+    }
+    
+    .about-us {
+        margin: 150px;
+    }
+    
+    .abt-why-us {
+        right: 100px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .about {
+        flex-direction: column;
+        padding: 3rem;
+        margin: 30px;
+        gap: 50px;
+        align-items: center;
+    }
+    
+    .about-left {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .about-left button {
+        align-self: center;
+    }
+    
+    .about-right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+@media (max-width: 960px) {
+    .about {
+        padding: 2rem;
+        margin: 20px;
+    }
+    
+    .about-left h1 {
+        font-size: 32px;
+    }
+    
+    .doctor-1 {
+        width: 250px;
+        height: 300px;
+    }
+    
+    .doctor-2 {
+        width: 150px;
+        top: 60px;
+        left: -50px;
+    }
+    
+    .about-us {
+        margin: 30px;
+        position: relative;
+    }
+    
+    .abt-why-us {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        width: 80%;
+        max-width: 400px;
+        padding: 30px;
+        z-index: 2;
+        background-color: rgb(5, 64, 109);
+    }
+    
+    .abt-why-us ol {
+        padding-left: 15px;
+    }
+    
+    .abt-why-us ol li::before {
+        font-size: 2.5rem;
+    }
+    
+    .abt-why-us ol li span {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        padding: 1.5rem;
+        margin: 10px;
+    }
+    
+    .about-left h1 {
+        font-size: 28px;
+    }
+    
+    .doctor-1 {
+        width: 200px;
+        height: 240px;
+    }
+    
+    .doctor-2 {
+        width: 120px;
+        left: -30px;
+    }
+    
+    .about-us {
+        margin: 20px;
+        position: relative;
+    }
+
+    .about-us img{
+        width: 350px;
+        margin: 0 auto
+    }
+    .abt-why-us {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -25%);
+        width: 100%;
+        max-width: 350px;
+        padding: 20px;
+        z-index: 2;
+        background-color: rgb(5, 64, 109);
+    }
+    
+    .abt-why-us ol li::before {
+        font-size: 2rem;
+        margin-right: 10px;
+    }
+    
+    .abt-why-us ol li span {
+        font-size: 16px;
+    }
+    
+    .abt-why-us ol li p {
+        font-size: 12px;
+    }
+}
+

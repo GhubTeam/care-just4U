@@ -1,0 +1,166 @@
+/* General styles for the BookAppointment component */
+.book-appointment {
+  position: relative;
+  height: 600px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.appointment-slider {
+  height: 100%;
+  position: relative;
+}
+
+.appointment-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8%;
+  overflow-x: hidden;
+}
+.appointment-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slide-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.text-content {
+  color: white;
+  max-width: 600px;
+}
+
+.text-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.text-content h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #a5f3fc;
+}
+
+.description {
+  margin-bottom: 2rem;
+}
+
+.description p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.book-now-btn {
+  background-color: #4ade80;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-now-btn:hover {
+  background-color: #22c55e;
+}
+
+.appointment-dots {
+  position: absolute;
+  left: 8%;
+  bottom: 40px;
+  z-index: 2;
+  display: flex;
+  gap: 8px;
+}
+
+.appointment-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.appointment-dot.active {
+  background-color: white;
+  transform: scale(1.2);
+}
+@media (max-width: 1670px) {
+  .book-appointment{
+    margin-top: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .slide-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .text-content {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .text-content h2 {
+    font-size: 2rem;
+  }
+
+  .text-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .description p {
+    font-size: 0.9rem;
+  }
+
+  .appointment-dots {
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .text-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .description p {
+    font-size: 0.8rem;
+  }
+
+  .book-now-btn {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+}

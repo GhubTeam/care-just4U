@@ -1,0 +1,56 @@
+:root {
+  --font-outfit: "Outfit", sans-serif; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden; 
+}
+.default-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(to bottom, #518453, #506a80);
+  font-family: var(--font-outfit);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+.blue-color{
+ color: #2b3674;
+}
+.default-button:hover {
+  transform: scale(1.1);
+  border: 2px solid white;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto; 
+ 
+}
+
+@media (max-width: 768px) {
+  .default-button {
+    font-size: 14px;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .default-button {
+    font-size: 12px;
+    padding: 0.5rem 1rem;
+  }
+}
