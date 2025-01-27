@@ -42,7 +42,7 @@ const BookAppointment = () => {
                   <p>{slide.description1}</p>
                   <p>{slide.description2}</p>
                 </div>
-                <button className="book-now-btn">Book Now</button>
+                <button className="book-now-btn">Contact Us</button>
               </div>
             </div>
           </div>

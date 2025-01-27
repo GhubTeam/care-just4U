@@ -2,16 +2,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:50px;
+    margin:20px;
+    gap: 50px;
     
     
 }
 .about {
     display: flex;
-    gap: 300px;
+    gap: 150px;
     align-items: center;
     background-color: whitesmoke;
     border-radius: 50px;
+    padding: 0px 40px;
     
 
 }
@@ -53,7 +55,7 @@
 }
 
 .about-image-1 {
-    width: 350px;
+    width: 400px;
     height: 400px;
     position: relative;
     z-index: 1;
@@ -64,7 +66,7 @@
 .about-image-2{
     position: absolute;
     top: 100px;
-    left: -150px;
+    left: -120px;
     width: 220px;
     height: 200px;
     z-index: 2;
@@ -77,11 +79,12 @@
     color: #fff;
     position: relative;
     align-items: center;
+    right:200px;
 
 }
 
 .about-us img {
-    width: 500px;
+    width: 550px;
     position: relative;
     border-radius: 10px;
    
@@ -90,7 +93,7 @@
 .abt-why-us {
     background-color: rgb(5, 64, 109);
     position: absolute;
-    left: 400px;
+    left: 520px;
     top: 100px;
     width: 420px;
     padding: 20px;
@@ -141,25 +144,6 @@
     margin-top: 2px;
 }
 
-@media (max-width: 1400px) {
-    .about {
-        gap: 150px;
-        margin: 60px;
-    }
-    
-    .doctor-2 {
-        left: -100px;
-    }
-    
-    .about-us {
-        margin: 150px;
-    }
-    
-    .abt-why-us {
-        right: 100px;
-    }
-}
-
 @media (max-width: 1170px) {
     .about {
         flex-direction: column;
@@ -183,7 +167,14 @@
         display: flex;
         justify-content: center;
     }
-    
+
+    .about-us img{
+        width: 420px;
+        height: 400px;
+    }
+    .abt-why-us{
+        left: 400px;
+    }
 }
 @media (max-width: 960px) {
     .about {
@@ -196,28 +187,31 @@
     }
     
     .about-image-1 {
-        width: 250px;
+        width: 500px;
         height: 300px;
     }
     
     .about-image-2 {
-        width: 150px;
+        width: 250px;
         top: 60px;
-        left: -50px;
+        left: -110px;
     }
     
     .about-us {
         margin: 30px;
         position: relative;
+        left: 4px;
     }
-    
+    .about-us img{
+        width: 600px;
+    }
     .abt-why-us {
         position: absolute;
-        top: 80%;
+        top: 110%;
         left: 50%;
         transform: translate(-50%, -20%);
         width: 80%;
-        max-width: 400px;
+        max-width: 500px;
         padding: 30px;
         z-index: 2;
         background-color: rgb(5, 64, 109);
@@ -245,7 +239,9 @@
     .about-left h1 {
         font-size: 28px;
     }
-    
+    .about-images{
+        left: 20px;
+    }
     .about-image-1{
         width: 200px;
         height: 240px;
@@ -253,12 +249,13 @@
     
     .about-image-2 {
         width: 120px;
-        left: -30px;
+        left: -60px;
     }
     
     .about-us {
         margin: 20px;
         position: relative;
+        right: 20px;
     }
 
     .about-us img{
@@ -290,4 +287,3 @@
         font-size: 12px;
     }
 }
-
